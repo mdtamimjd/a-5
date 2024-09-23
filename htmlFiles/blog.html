@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog page</title>
+    <link rel="shortcut icon" href="../assets/logo.png" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google icon -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+<body class="bg-zinc-50">
+    <header class="sticky top-0">
+        <nav class="py-6 flex justify-around items-center bg-orange-100">
+          <div class="">
+            <button
+              id="home-btn"
+              class="px-8 py-2.5 font-medium text-lg bg-green-400 hover:bg-green-500 rounded-lg"
+            >
+              Home
+            </button>
+          </div>
+          <div class="gap-2 items-center hidden md:flex">
+            <img src="../assets/logo.png" alt="" class="w-7" />
+            <h3 class="text-3xl font-bold">
+              BD<span class="text-orange-400 font-bold mx-1">-</span>PTH
+            </h3>
+          </div>
+          <div class="flex items-center gap-1.5">
+            <img src="../assets/coin.png" alt="" />
+            <p class="font-medium text-lg text-zinc-600 tracking-tighter">
+              <span id="defaultBalance" class="text-black tracking-normal text-xl"
+                >20000</span
+              >
+              USD
+            </p>
+          </div>
+        </nav>
+      </header>
+
+      <main class="w-11/12 lg:w-8/12 mx-auto my-10">
+        <!-- FAQ's section -->
+        <section class="md:w-[620px] space-y-2">
+          <!-- one card -->
+            <div class="bg-white border-2 rounded-lg p-3 space-y-4">
+                <div id="qusOne" class="flex justify-between items-center cursor-pointer">
+                    <h2 class="font-semibold text-2xl ">What is the Document Object Model (DOM)?</h2>
+                    <span class="material-symbols-outlined text-3xl select-none" id="arrow-icon-one">
+                        keyboard_arrow_down
+                    </span>
+                </div>
+                <div id="ansOne" class="">
+                    <p class="text-lg text-zinc-500 font-medium">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero dicta beatae aliquid sint mollitia ad autem facilis at omnis tempora quibusdam, maiores porro quo obcaecati. Atque consequuntur deleniti accusantium autem!</p>
+                </div>
+            </div>
+            <!-- two card -->
+            <div class="bg-white border-2 rounded-lg p-3 space-y-4">
+                <div id="qusTwo" class="flex justify-between items-center cursor-pointer">
+                    <h2 class="font-semibold text-2xl ">How do you select an element from the DOM?</h2>
+                    <span class="material-symbols-outlined text-3xl select-none" id="arrow-icon-two">
+                        keyboard_arrow_down
+                    </span>
+                </div>
+                <div id="ansTwo" class="">
+                    <p class="text-lg text-zinc-500 font-medium">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero dicta beatae aliquid sint mollitia ad autem facilis at omnis tempora quibusdam, maiores porro quo obcaecati. Atque consequuntur deleniti accusantium autem!</p>
+                </div>
+            </div>
+            <!-- three card -->
+            <div class="bg-white border-2 rounded-lg p-3 space-y-4">
+                <div id="qusThree" class="flex justify-between items-center cursor-pointer">
+                    <h2 class="font-semibold text-2xl">What is event delegation in the context of the DOM, and why is it useful?</h2>
+                    <span class="material-symbols-outlined text-3xl select-none" id="arrow-icon-three">
+                        keyboard_arrow_down
+                    </span>
+                </div>
+                <div id="ansThree" class="">
+                    <p class="text-lg text-zinc-500 font-medium">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero dicta beatae aliquid sint mollitia ad autem facilis at omnis tempora quibusdam, maiores porro quo obcaecati. Atque consequuntur deleniti accusantium autem!</p>
+                </div>
+            </div>
+            <!-- four card -->
+            <div class="bg-white border-2 rounded-lg p-3 space-y-4">
+                <div id="qusFour" class="flex justify-between items-center cursor-pointer">
+                    <h2 class="font-semibold text-2xl ">How do you manipulate an element's attributes and styles using the DOM?</h2>
+                    <span class="material-symbols-outlined text-3xl select-none" id="arrow-icon-four">
+                        keyboard_arrow_down
+                    </span>
+                </div>
+                <div id="ansFour" class="">
+                    <p class="text-lg text-zinc-500 font-medium">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero dicta beatae aliquid sint mollitia ad autem facilis at omnis tempora quibusdam, maiores porro quo obcaecati. Atque consequuntur deleniti accusantium autem!</p>
+                </div>
+            </div>
+        </section>
+      </main>
+
+    <script src="../js/commonFunction.js"></script>
+    <script src="../js/block.js"></script>
+</body>
+</html>

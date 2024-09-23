@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Bangladesh Donate PTH</title>
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
   </head>
   <body class="bg-zinc-50">
     <header class="sticky top-0">
@@ -35,18 +36,18 @@
       </nav>
       <div class="py-6 text-center space-x-5 bg-white/30 backdrop-blur">
         <button
-          class="px-6 py-3 font-medium text-lg bg-green-400 rounded-lg border-2 border-green-400"
+          class="px-6 py-3 font-medium text-lg bg-green-400 rounded-lg border-2 border-green-400" id="donation-btn"
         >
           Donation
         </button>
-        <button class="px-6 py-3 font-medium text-lg border-2 rounded-lg">
+        <button class="px-6 py-3 font-medium text-lg border-2 rounded-lg" id="history-btn">
           History
         </button>
       </div>
     </header>
 
-    <!-- main part -->
-    <main>
+    <!-- main donate part  -->
+    <main id="show-donate">
       <!-- all card section for donate -->
       <section
         id="allCard"
@@ -70,7 +71,7 @@
                   <span
                     id="oneDonateBalance"
                     class="text-black tracking-normal text-xl"
-                    >6100</span
+                    >6000</span
                   >
                   USD
                 </p>
@@ -126,7 +127,7 @@
                   <span
                     id="twoDonateBalance"
                     class="text-black tracking-normal text-xl"
-                    >230</span
+                    >1000</span
                   >
                   USD
                 </p>
@@ -182,7 +183,7 @@
                   <span
                     id="threeDonateBalance"
                     class="text-black tracking-normal text-xl"
-                    >15900</span
+                    >3000</span
                   >
                   USD
                 </p>
@@ -222,9 +223,18 @@
           </div>
         </div>
       </section>
-      <!-- footer -->
-       <footer class="w-full h-[100px] bg-orange-100 mt-10">
-       </footer>
     </main>
+
+    <!-- main history part -->
+    <main id="show-history" class="hidden w-11/12 lg:w-8/12 mx-auto grid grid-cols-1 gap-5">
+      <div class="bg-white rounded-lg p-5 "></div>
+    </main>
+
+    <!-- footer -->
+     <footer class="w-full h-[100px] bg-orange-100 mt-10">
+     </footer>
+
+     <script src="./js/commonFunction.js"></script>
+     <script src="./js/index.js"></script>
   </body>
 </html>
