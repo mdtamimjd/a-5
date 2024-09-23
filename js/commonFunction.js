@@ -14,10 +14,6 @@ function addRotate(one,two,three){
     return;
 }
 
-function dateNow(id){
-    return document.getElementById(id).innerText =  new Date();
-}
-
 function convertNumber(id){
     let str = getId(id).innerText;
     return parseFloat(str);
@@ -27,8 +23,7 @@ function valueNumber(id){
     let str = getId(id).value;
     if(isNaN(str) || parseFloat(str) < 0 || convertNumber("defaultBalance") < parseFloat(str)){
         alert("Please enter a valid amount!");
-        getId(id).value = "";
-        return false;
+        return getId(id).value = "";
     } else{
         return parseFloat(str);
     }
@@ -46,7 +41,7 @@ function valueNumber(id){
 // })
 
 
-function donateNowMethod(inputValuePramitor, alldonatedMoneyPramitor){
+function donateNowMethod(inputValuePramitor, alldonatedMoneyPramitor, title){
     let defaultBalance = convertNumber("defaultBalance");
     let addInputMoneyValue = valueNumber(inputValuePramitor);
     let nextDefaultBalance = (defaultBalance - addInputMoneyValue).toFixed(2);
@@ -55,4 +50,25 @@ function donateNowMethod(inputValuePramitor, alldonatedMoneyPramitor){
     let addDonatedMoney = (donatedMoney + addInputMoneyValue).toFixed(2);
     getId(alldonatedMoneyPramitor).innerText = addDonatedMoney;
     getId(inputValuePramitor).value = "";
+    let dateNow = new Date();
+    let titleName = getId(title).innerText;
+    let changeTitleNameForHistory = titleName.replace("Donate for","")
+    let div = document.createElement("div");
+    div.classList.add(
+        "bg-white",
+        "rounded-lg",
+        "p-5",
+        "h-24",
+        "flex",
+        "flex-col",
+        "justify-between",
+        "border-2",
+        "border-gray-300"
+    );
+    div.innerHTML = `
+    <h2 class="font-semibold text-xl">${addInputMoneyValue} Taka is donated for ${changeTitleNameForHistory}</h2>
+    <p class="text-zinc-500 font-medium">Date: ${dateNow}</p>
+    `;
+    getId("show-history").appendChild(div);
+
 }

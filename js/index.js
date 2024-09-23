@@ -23,29 +23,17 @@ getId("history-btn").addEventListener("click", ()=>{
         "bg-green-400",
         "border-green-400",
     )
-    getId("show-donate").classList.add("hidden")
+    getId("show-donate").classList.add("hidden","flex")
     getId("show-history").classList.remove("hidden")
 })
 
-
-// getId("one-btn").addEventListener("click",()=>{
-//     let defaultBalance = convertNumber("defaultBalance");
-//     let oneValue = valueNumber("inputOne")
-//     console.log(oneValue)
-//     let output = (defaultBalance - oneValue).toFixed(2);
-//     getId("defaultBalance").innerText = output;
-//     let donatedMoney = convertNumber("oneDonateBalance")
-//     let sum = (donatedMoney + oneValue).toFixed(2);
-//     getId("oneDonateBalance").innerText = sum;
-
-// })
 // click and calculate and donation done;
 getId("one-btn").onclick = ()=>{
-    donateNowMethod("inputOne","oneDonateBalance");
+    donateNowMethod("inputOne","oneDonateBalance","oneTitle");
 }
 getId("two-btn").onclick = ()=>{
-    donateNowMethod("inputTwo","twoDonateBalance");
+    donateNowMethod("inputTwo","twoDonateBalance","twoTitle");
 }
 getId("three-btn").onclick = ()=>{
-    donateNowMethod("inputThree","threeDonateBalance");
+    donateNowMethod("inputThree","threeDonateBalance","threeTitle");
 }
