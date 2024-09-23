@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Bangladesh Donate PTH</title>
+  </head>
+  <body class="bg-zinc-50">
+    <header class="sticky top-0">
+      <nav class="py-6 flex justify-around items-center bg-orange-100">
+        <div class="">
+          <button
+            id="blog-btn"
+            class="px-8 py-2.5 font-medium text-lg bg-green-400 hover:bg-green-500 rounded-lg"
+          >
+            Blog
+          </button>
+        </div>
+        <div class="gap-2 items-center hidden md:flex">
+          <img src="./assets/logo.png" alt="" class="w-7" />
+          <h3 class="text-3xl font-bold">
+            BD<span class="text-orange-400 font-bold mx-1">-</span>PTH
+          </h3>
+        </div>
+        <div class="flex items-center gap-1.5">
+          <img src="./assets/coin.png" alt="" />
+          <p class="font-medium text-lg text-zinc-600 tracking-tighter">
+            <span id="defaultBalance" class="text-black tracking-normal text-xl"
+              >12500</span
+            >
+            USD
+          </p>
+        </div>
+      </nav>
+      <div class="py-6 text-center space-x-5 bg-white/30 backdrop-blur">
+        <button
+          class="px-6 py-3 font-medium text-lg bg-green-400 rounded-lg border-2 border-green-400"
+        >
+          Donation
+        </button>
+        <button class="px-6 py-3 font-medium text-lg border-2 rounded-lg">
+          History
+        </button>
+      </div>
+    </header>
+    <main>
+      <!-- all card section for donate -->
+      <section
+        id="allCard"
+        class="w-11/12 lg:w-8/12 mx-auto flex flex-col gap-5"
+      >
+
+        <!-- card one Noakhali -->
+        <div
+          class="grid md:grid-cols-2 grid-cols-1 md:max-h-[500px] gap-3 border-2 p-6 rounded-lg bg-white"
+        >
+        <!-- card img -->
+          <div><img src="./assets/noakhali.png" alt="" /></div>
+          <!-- card contant -->
+          <div class="flex flex-col justify-between gap-3 md:gap-0">
+            <div>
+              <button
+                class="px-5 py-3 font-medium text-lg bg-zinc-100 rounded-lg flex items-center gap-1.5"
+              >
+                <img src="./assets/coin.png" alt="" />
+                <p class="font-medium text-lg text-zinc-600 tracking-tighter">
+                  <span
+                    id="NoakhaliDonateBalance"
+                    class="text-black tracking-normal text-xl"
+                    >5100</span
+                  >
+                  USD
+                </p>
+              </button>
+            </div>
+            <h2 class="font-semibold text-2xl md:line-clamp-1">
+              Donate for Flood at Noakhali, Bangladesh
+            </h2>
+            <p
+              class="text-zinc-500 text-lg tracking-wide h-[140px] line-clamp-5 hover:line-clamp-none hover:overflow-y-scroll"
+            >
+              m ullam quo maiores facere cumque est expedita, assumenda dolor ex
+              officiis. Deleniti odio repudiandae animi dolores. Repellat modi
+              similique odio ab dicta. Harum quod pariatur ut consequatur
+              reprehenderit, porro provident totam eum fuga. Qui suscipit, at
+              inventore aliquid ipfficia aspernatur ipsa magni, earum, eligendi,
+              at nobis molestiae autem impedit perferendis numquam? Neque nihil
+              alias voluptate in, beatae expedita excepturi totam aspernatur
+              error perferendis dignissimos quasi, vitae veritatis dolorem
+              explicabo laborum laboriosam! Sint voluptas vel animi culpa
+              repudiandae, rerum commodi sit ipsam aliquam voluptate! Similique
+              magnam odit accusamus sint, aut provident fuga asperiores tenetur
+              iusto harum libero ut maiores dicta?
+            </p>
+            <input
+              type="text"
+              id="inputOne"
+              placeholder="Write Donation Amount"
+              class="w-full p-3 border-2 rounded-lg text-lg focus:outline-green-500"
+            />
+            <button
+              id="blog-btn"
+              class="px-8 py-2.5 font-medium text-lg bg-green-400 hover:bg-green-500 rounded-lg"
+            >
+              Donate Now
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
