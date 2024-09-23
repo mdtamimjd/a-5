@@ -29,11 +29,22 @@ getId("history-btn").addEventListener("click", ()=>{
 
 // click and calculate and donation done;
 getId("one-btn").onclick = ()=>{
-    donateNowMethod("inputOne","oneDonateBalance","oneTitle");
+    donateNowMethod("inputOne","oneDonateBalance","oneTitle","modal-one");
 }
 getId("two-btn").onclick = ()=>{
-    donateNowMethod("inputTwo","twoDonateBalance","twoTitle");
+    donateNowMethod("inputTwo","twoDonateBalance","twoTitle","modal-two");
 }
 getId("three-btn").onclick = ()=>{
-    donateNowMethod("inputThree","threeDonateBalance","threeTitle");
+    donateNowMethod("inputThree","threeDonateBalance","threeTitle","modal-three");
 }
+
+// modal close button
+getId("closeModal-one").addEventListener("click", ()=>{
+    closeModal("modal-one");
+});
+getId("closeModal-two").addEventListener("click", ()=>{
+    closeModal("modal-two");
+});
+getId("closeModal-three").addEventListener("click", ()=>{
+    closeModal("modal-three");
+});

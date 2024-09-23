@@ -21,7 +21,7 @@ function convertNumber(id){
 
 function valueNumber(id){
     let str = getId(id).value;
-    if(isNaN(str) || parseFloat(str) < 0 || convertNumber("defaultBalance") < parseFloat(str)){
+    if(isNaN(str) || parseFloat(str) < 0 || convertNumber("defaultBalance") < parseFloat(str) || str.length < 1){
         alert("Please enter a valid amount!");
         return getId(id).value = "";
     } else{
@@ -29,7 +29,7 @@ function valueNumber(id){
     }
 }
 
-function donateNowMethod(inputValuePramitor, alldonatedMoneyPramitor, title){
+function donateNowMethod(inputValuePramitor, alldonatedMoneyPramitor, title,modal){
     let defaultBalance = convertNumber("defaultBalance");
     let addInputMoneyValue = valueNumber(inputValuePramitor);
     let nextDefaultBalance = (defaultBalance - addInputMoneyValue).toFixed(2);
@@ -58,5 +58,14 @@ function donateNowMethod(inputValuePramitor, alldonatedMoneyPramitor, title){
     <p class="text-zinc-500 font-medium">Date: ${dateNow}</p>
     `;
     getId("show-history").appendChild(div);
+
+    // modal 
+    getId(modal).classList.remove("hidden");
+    getId(modal).classList.add("flex");
+}
+
+function closeModal(modal){
+    getId(modal).classList.add("hidden");
+    getId(modal).classList.remove("flex");
 
 }

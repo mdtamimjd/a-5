@@ -8,7 +8,7 @@
     <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
   </head>
   <body class="bg-zinc-50">
-    <header class="sticky top-0">
+    <header class="sticky top-0 z-20">
       <nav class="py-6 flex justify-around items-center bg-orange-100">
         <div class="">
           <button
@@ -56,7 +56,7 @@
 
         <!-- card one Noakhali -->
         <div
-          class="grid md:grid-cols-2 grid-cols-1 md:min-h-[350px] gap-3 md:gap-10 border-2 p-6 rounded-lg bg-white"
+          class="grid md:grid-cols-2 grid-cols-1 md:min-h-[350px] gap-3 md:gap-10 border-2 p-6 rounded-lg bg-white relative"
         >
         <!-- card img -->
           <img src="./assets/noakhali.png" alt="" />
@@ -109,10 +109,19 @@
               Donate Now
             </button>
           </div>
+          <!-- modal -->
+          <div id="modal-one" class="hidden absolute w-full h-full rounded-lg bg-zinc-500/30 backdrop-blur justify-center items-center z-0">
+            <div class="bg-white md:w-1/2 md:h-2/3 w-10/12 text-center p-5 rounded-lg z-10 flex flex-col justify-between items-center gap-3 shadow-2xl shadow-black">
+              <h2 class="font-bold text-4xl text-zinc-950 font-sans">Congrates!</h2>
+              <div><img src="./assets/coin.png"alt=""></div>
+              <p class="font-medium text-2xl text-zinc-700">Successfully</p>
+              <div><button id="closeModal-one" class="px-6 py-3 rounded-xl font-medium text-lg bg-zinc-200 hover:bg-green-400 transition duration-500">Close</button></div>
+            </div>
+          </div>
         </div>
         <!-- card two Feni -->
         <div
-          class="grid md:grid-cols-2 grid-cols-1 md:min-h-[350px] gap-3 border-2 p-6 rounded-lg bg-white"
+          class="grid md:grid-cols-2 grid-cols-1 md:min-h-[350px] gap-3 border-2 p-6 rounded-lg bg-white relative"
         >
         <!-- card img -->
          <img src="./assets/feni.png" alt=""/>
@@ -165,10 +174,19 @@
               Donate Now
             </button>
           </div>
+          <!-- modal -->
+          <div id="modal-two" class="hidden absolute w-full h-full rounded-lg bg-zinc-500/30 backdrop-blur justify-center items-center z-0">
+            <div class="bg-white md:w-1/2 md:h-2/3 w-10/12 text-center p-5 rounded-lg z-10 flex flex-col justify-between items-center gap-3 shadow-2xl shadow-black">
+              <h2 class="font-bold text-4xl text-zinc-950 font-sans">Congrates!</h2>
+              <div><img src="./assets/coin.png"alt=""></div>
+              <p class="font-medium text-2xl text-zinc-700">Successfully</p>
+              <div><button id="closeModal-two" class="px-6 py-3 rounded-xl font-medium text-lg bg-zinc-200 hover:bg-green-400 transition duration-500">Close</button></div>
+            </div>
+          </div>
         </div>
         <!-- card three  quota-protest -->
         <div
-          class="grid md:grid-cols-2 grid-cols-1 md:min-h-[350px] gap-3 border-2 p-6 rounded-lg bg-white"
+          class="grid md:grid-cols-2 grid-cols-1 md:min-h-[350px] gap-3 border-2 p-6 rounded-lg bg-white relative"
         >
         <!-- card img -->
           <img src="./assets/quota-protest.png" alt="quota-protest" />
@@ -221,17 +239,21 @@
               Donate Now
             </button>
           </div>
+          <!-- modal -->
+          <div id="modal-three" class="hidden absolute w-full h-full rounded-lg bg-zinc-500/30 backdrop-blur justify-center items-center z-0">
+            <div class="bg-white md:w-1/2 md:h-2/3 w-10/12 text-center p-5 rounded-lg z-10 flex flex-col justify-between items-center gap-3 shadow-2xl shadow-black">
+              <h2 class="font-bold text-4xl text-zinc-950 font-sans">Congrates!</h2>
+              <div><img src="./assets/coin.png"alt=""></div>
+              <p class="font-medium text-2xl text-zinc-700">Successfully</p>
+              <div><button id="closeModal-three" class="px-6 py-3 rounded-xl font-medium text-lg bg-zinc-200 hover:bg-green-400 transition duration-500">Close</button></div>
+            </div>
+          </div>
         </div>
       </section>
     </main>
 
     <!-- main history part -->
     <main id="show-history" class="hidden w-11/12 lg:w-8/12 mx-auto flex-col min-h-screen space-y-5"></main>
-    
-    <!-- modal -->
-     <section id="modal">
-      <h2></h2>
-     </section>
 
     <!-- footer -->
      <footer class="w-full h-[100px] bg-orange-100 mt-10">
