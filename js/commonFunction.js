@@ -29,18 +29,6 @@ function valueNumber(id){
     }
 }
 
-// getId("one-btn").addEventListener("click",()=>{
-//     let defaultBalance = convertNumber("defaultBalance");
-//     let oneValue = valueNumber("inputOne")
-//     let output = (defaultBalance - oneValue).toFixed(2);
-//     getId("defaultBalance").innerText = output;
-//     let donatedMoney = convertNumber("oneDonateBalance")
-//     let sum = (donatedMoney + oneValue).toFixed(2);
-//     getId("oneDonateBalance").innerText = sum;
-
-// })
-
-
 function donateNowMethod(inputValuePramitor, alldonatedMoneyPramitor, title){
     let defaultBalance = convertNumber("defaultBalance");
     let addInputMoneyValue = valueNumber(inputValuePramitor);
