@@ -12,7 +12,7 @@ getId("donation-btn").addEventListener("click", ()=>{
         "border-green-400",
     )
     getId("show-donate").classList.remove("hidden")
-    getId("show-history").classList.add("hidden")
+    getId("history-main-section").classList.add("hidden")
 })   
 getId("history-btn").addEventListener("click", ()=>{
     getId("donation-btn").classList.remove(
@@ -24,7 +24,7 @@ getId("history-btn").addEventListener("click", ()=>{
         "border-green-400",
     )
     getId("show-donate").classList.add("hidden","flex")
-    getId("show-history").classList.remove("hidden")
+    getId("history-main-section").classList.remove("hidden")
 })
 
 // click and calculate and donation done;

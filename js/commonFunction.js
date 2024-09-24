@@ -41,6 +41,7 @@ function donateNowMethod(inputValuePramitor, alldonatedMoneyPramitor, title,moda
     let dateNow = new Date();
     let titleName = getId(title).innerText;
     let changeTitleNameForHistory = titleName.replace("Donate for","")
+    // create history data
     let div = document.createElement("div");
     div.classList.add(
         "bg-white",
@@ -58,7 +59,9 @@ function donateNowMethod(inputValuePramitor, alldonatedMoneyPramitor, title,moda
     <h2 class="font-semibold text-xl">${addInputMoneyValue} Taka is donated for ${changeTitleNameForHistory}</h2>
     <p class="text-zinc-500 font-medium">Date: ${dateNow}</p>
     `;
-    getId("show-history").appendChild(div);
+    // getId("show-history").appendChild(div);
+    let show_div = getId("show-history")
+    show_div.insertBefore(div,show_div.childNodes[0])
 
     // modal 
     getId(modal).classList.remove("hidden");
