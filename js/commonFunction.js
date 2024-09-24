@@ -21,7 +21,7 @@ function convertNumber(id){
 
 function valueNumber(id){
     let str = getId(id).value;
-    if(isNaN(str) || parseFloat(str) < 0 || convertNumber("defaultBalance") < parseFloat(str) || str.length < 1){
+    if(isNaN(str) || parseFloat(str) <= 0 || convertNumber("defaultBalance") < parseFloat(str) || str.length < 1){
         alert("Please enter a valid amount!");
         return getId(id).value = "";
     } else{
