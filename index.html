@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Bangladesh Donate PTH</title>
-    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon" />
+    <!-- google icon -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
   </head>
   <body class="bg-zinc-50">
     <header class="sticky top-0 z-20">
@@ -36,11 +39,15 @@
       </nav>
       <div class="py-6 text-center space-x-5 bg-white/30 backdrop-blur">
         <button
-          class="px-6 py-3 font-medium text-lg bg-green-400 rounded-lg border-2 border-green-400" id="donation-btn"
+          class="px-6 py-3 font-medium text-lg bg-green-400 rounded-lg border-2 border-green-400"
+          id="donation-btn"
         >
           Donation
         </button>
-        <button class="px-6 py-3 font-medium text-lg border-2 rounded-lg" id="history-btn">
+        <button
+          class="px-6 py-3 font-medium text-lg border-2 rounded-lg"
+          id="history-btn"
+        >
           History
         </button>
       </div>
@@ -53,12 +60,11 @@
         id="allCard"
         class="w-11/12 lg:w-8/12 mx-auto flex flex-col gap-5"
       >
-
         <!-- card one Noakhali -->
         <div
           class="grid md:grid-cols-2 grid-cols-1 md:min-h-[350px] gap-3 md:gap-10 border-2 p-6 rounded-lg bg-white relative"
         >
-        <!-- card img -->
+          <!-- card img -->
           <img src="./assets/noakhali.png" alt="" />
           <!-- card contant -->
           <div class="flex flex-col justify-between gap-3 md:gap-0">
@@ -83,18 +89,15 @@
             <p
               class="text-zinc-500 text-lg tracking-wide h-[140px] line-clamp-5 hover:line-clamp-none hover:overflow-y-scroll"
             >
-              m ullam quo maiores facere cumque est expedita, assumenda dolor ex
-              officiis. Deleniti odio repudiandae animi dolores. Repellat modi
-              similique odio ab dicta. Harum quod pariatur ut consequatur
-              reprehenderit, porro provident totam eum fuga. Qui suscipit, at
-              inventore aliquid ipfficia aspernatur ipsa magni, earum, eligendi,
-              at nobis molestiae autem impedit perferendis numquam? Neque nihil
-              alias voluptate in, beatae expedita excepturi totam aspernatur
-              error perferendis dignissimos quasi, vitae veritatis dolorem
-              explicabo laborum laboriosam! Sint voluptas vel animi culpa
-              repudiandae, rerum commodi sit ipsam aliquam voluptate! Similique
-              magnam odit accusamus sint, aut provident fuga asperiores tenetur
-              iusto harum libero ut maiores dicta?
+              Noakhali, Cumilla, Khagrachhari, Chattogram, Moulvibazar,
+              Habiganj, Brahmanbaria, Sylhet, Lakshmipur and Cox's Bazar
+              districts have been affected in the ongoing flood since August 20.
+              A total of 9,46,769 families have been stranded in the flood while
+              1,95,030 people and 18,096 cattle were given shelter to 3176
+              shelter centers, according to latest updates on ongoing flood
+              issued by the Disaster Management and Relief Ministry. We help
+              flood affected people and we need your help to help them so please
+              donate to support the affected people.
             </p>
             <input
               type="text"
@@ -110,12 +113,26 @@
             </button>
           </div>
           <!-- modal -->
-          <div id="modal-one" class="hidden absolute w-full h-full rounded-lg bg-zinc-500/30 backdrop-blur justify-center items-center z-0">
-            <div class="bg-white md:w-1/2 md:h-2/3 w-10/12 text-center p-5 rounded-lg z-10 flex flex-col justify-between items-center gap-3 shadow-2xl shadow-black">
-              <h2 class="font-bold text-4xl text-zinc-950 font-sans">Congrates!</h2>
-              <div><img src="./assets/coin.png"alt=""></div>
+          <div
+            id="modal-one"
+            class="hidden absolute w-full h-full rounded-lg bg-white/30 justify-center items-center z-0"
+          >
+            <div
+              class="bg-white md:w-1/2 md:h-2/3 w-10/12 text-center p-5 rounded-lg z-10 flex flex-col justify-between items-center gap-3 shadow-2xl shadow-black"
+            >
+              <h2 class="font-bold text-4xl text-zinc-950 font-sans">
+                Congrates!
+              </h2>
+              <div><img src="./assets/coin.png" alt="" /></div>
               <p class="font-medium text-2xl text-zinc-700">Successfully</p>
-              <div><button id="closeModal-one" class="px-6 py-3 rounded-xl font-medium text-lg bg-zinc-200 hover:bg-green-400 transition duration-500">Close</button></div>
+              <div>
+                <button
+                  id="closeModal-one"
+                  class="px-6 py-3 rounded-xl font-medium text-lg bg-zinc-200 hover:bg-green-400 transition duration-500"
+                >
+                  Close
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -123,8 +140,8 @@
         <div
           class="grid md:grid-cols-2 grid-cols-1 md:min-h-[350px] gap-3 border-2 p-6 rounded-lg bg-white relative"
         >
-        <!-- card img -->
-         <img src="./assets/feni.png" alt=""/>
+          <!-- card img -->
+          <img src="./assets/feni.png" alt="" />
           <!-- card contant -->
           <div class="flex flex-col justify-between gap-3 md:gap-0">
             <div>
@@ -143,23 +160,21 @@
               </button>
             </div>
             <h2 class="font-semibold text-2xl md:line-clamp-1" id="twoTitle">
-                Donate for Flood Relief in Feni,Bangladesh
+              Donate for Flood Relief in Feni,Bangladesh
             </h2>
             <p
               class="text-zinc-500 text-lg tracking-wide h-[140px] line-clamp-5 hover:line-clamp-none hover:overflow-y-scroll"
             >
-              m ullam quo maiores facere cumque est expedita, assumenda dolor ex
-              officiis. Deleniti odio repudiandae animi dolores. Repellat modi
-              similique odio ab dicta. Harum quod pariatur ut consequatur
-              reprehenderit, porro provident totam eum fuga. Qui suscipit, at
-              inventore aliquid ipfficia aspernatur ipsa magni, earum, eligendi,
-              at nobis molestiae autem impedit perferendis numquam? Neque nihil
-              alias voluptate in, beatae expedita excepturi totam aspernatur
-              error perferendis dignissimos quasi, vitae veritatis dolorem
-              explicabo laborum laboriosam! Sint voluptas vel animi culpa
-              repudiandae, rerum commodi sit ipsam aliquam voluptate! Similique
-              magnam odit accusamus sint, aut provident fuga asperiores tenetur
-              iusto harum libero ut maiores dicta?
+              Feni, Cumilla, Khagrachhari,
+               Chattogram, Moulvibazar,
+              Habiganj, Brahmanbaria, Sylhet, Lakshmipur and Cox's Bazar
+              districts have been affected in the ongoing flood since August 20.
+              A total of 9,46,769 families have been stranded in the flood while
+              1,95,030 people and 18,096 cattle were given shelter to 3176
+              shelter centers, according to latest updates on ongoing flood
+              issued by the Disaster Management and Relief Ministry. We help
+              flood affected people and we need your help to help them so please
+              donate to support the affected people.
             </p>
             <input
               type="text"
@@ -175,12 +190,26 @@
             </button>
           </div>
           <!-- modal -->
-          <div id="modal-two" class="hidden absolute w-full h-full rounded-lg bg-zinc-500/30 backdrop-blur justify-center items-center z-0">
-            <div class="bg-white md:w-1/2 md:h-2/3 w-10/12 text-center p-5 rounded-lg z-10 flex flex-col justify-between items-center gap-3 shadow-2xl shadow-black">
-              <h2 class="font-bold text-4xl text-zinc-950 font-sans">Congrates!</h2>
-              <div><img src="./assets/coin.png"alt=""></div>
+          <div
+            id="modal-two"
+            class="hidden absolute w-full h-full rounded-lg bg-white/30 justify-center items-center z-0"
+          >
+            <div
+              class="bg-white md:w-1/2 md:h-2/3 w-10/12 text-center p-5 rounded-lg z-10 flex flex-col justify-between items-center gap-3 shadow-2xl shadow-black"
+            >
+              <h2 class="font-bold text-4xl text-zinc-950 font-sans">
+                Congrates!
+              </h2>
+              <div><img src="./assets/coin.png" alt="" /></div>
               <p class="font-medium text-2xl text-zinc-700">Successfully</p>
-              <div><button id="closeModal-two" class="px-6 py-3 rounded-xl font-medium text-lg bg-zinc-200 hover:bg-green-400 transition duration-500">Close</button></div>
+              <div>
+                <button
+                  id="closeModal-two"
+                  class="px-6 py-3 rounded-xl font-medium text-lg bg-zinc-200 hover:bg-green-400 transition duration-500"
+                >
+                  Close
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -188,7 +217,7 @@
         <div
           class="grid md:grid-cols-2 grid-cols-1 md:min-h-[350px] gap-3 border-2 p-6 rounded-lg bg-white relative"
         >
-        <!-- card img -->
+          <!-- card img -->
           <img src="./assets/quota-protest.png" alt="quota-protest" />
           <!-- card contant -->
           <div class="flex flex-col justify-between gap-3 md:gap-0">
@@ -208,23 +237,12 @@
               </button>
             </div>
             <h2 class="font-semibold text-2xl md:line-clamp-1" id="threeTitle">
-                Aid for Injured in the Quota Movement
+              Aid for Injured in the Quota Movement
             </h2>
             <p
               class="text-zinc-500 text-lg tracking-wide h-[140px] line-clamp-5 hover:line-clamp-none hover:overflow-y-scroll"
             >
-              m ullam quo maiores facere cumque est expedita, assumenda dolor ex
-              officiis. Deleniti odio repudiandae animi dolores. Repellat modi
-              similique odio ab dicta. Harum quod pariatur ut consequatur
-              reprehenderit, porro provident totam eum fuga. Qui suscipit, at
-              inventore aliquid ipfficia aspernatur ipsa magni, earum, eligendi,
-              at nobis molestiae autem impedit perferendis numquam? Neque nihil
-              alias voluptate in, beatae expedita excepturi totam aspernatur
-              error perferendis dignissimos quasi, vitae veritatis dolorem
-              explicabo laborum laboriosam! Sint voluptas vel animi culpa
-              repudiandae, rerum commodi sit ipsam aliquam voluptate! Similique
-              magnam odit accusamus sint, aut provident fuga asperiores tenetur
-              iusto harum libero ut maiores dicta?
+            We also support those who have suffered in the quotation movement, they fought for the country so you should support them. Please donate to support those who are in the hospital due to the disaster, many of them have lost their hands or eyes, so let's all support them financially.
             </p>
             <input
               type="text"
@@ -240,12 +258,26 @@
             </button>
           </div>
           <!-- modal -->
-          <div id="modal-three" class="hidden absolute w-full h-full rounded-lg bg-zinc-500/30 backdrop-blur justify-center items-center z-0">
-            <div class="bg-white md:w-1/2 md:h-2/3 w-10/12 text-center p-5 rounded-lg z-10 flex flex-col justify-between items-center gap-3 shadow-2xl shadow-black">
-              <h2 class="font-bold text-4xl text-zinc-950 font-sans">Congrates!</h2>
-              <div><img src="./assets/coin.png"alt=""></div>
+          <div
+            id="modal-three"
+            class="hidden absolute w-full h-full rounded-lg bg-white/30 justify-center items-center z-0"
+          >
+            <div
+              class="bg-white md:w-1/2 md:h-2/3 w-10/12 text-center p-5 rounded-lg z-10 flex flex-col justify-between items-center gap-3 shadow-2xl shadow-black"
+            >
+              <h2 class="font-bold text-4xl text-zinc-950 font-sans">
+                Congrates!
+              </h2>
+              <div><img src="./assets/coin.png" alt="" /></div>
               <p class="font-medium text-2xl text-zinc-700">Successfully</p>
-              <div><button id="closeModal-three" class="px-6 py-3 rounded-xl font-medium text-lg bg-zinc-200 hover:bg-green-400 transition duration-500">Close</button></div>
+              <div>
+                <button
+                  id="closeModal-three"
+                  class="px-6 py-3 rounded-xl font-medium text-lg bg-zinc-200 hover:bg-green-400 transition duration-500"
+                >
+                  Close
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -253,12 +285,18 @@
     </main>
 
     <!-- main history part -->
-    <main id="show-history" class="hidden w-11/12 lg:w-8/12 mx-auto flex-col min-h-screen space-y-5"></main>
+    <main
+      id="show-history"
+      class="hidden w-11/12 lg:w-8/12 mx-auto flex-col min-h-screen space-y-5"
+    >
+    <div class="flex items-center gap-2"><span class="font-semibold text-3xl">Your Donation History</span> <span class="material-symbols-outlined text-3xl pt-2">
+      history
+      </span></div>
+  </main>
 
     <!-- footer -->
-     <footer class="w-full h-[100px] bg-orange-100 mt-10">
-     </footer>
-     <script src="./js/commonFunction.js"></script>
-     <script src="./js/index.js"></script>
+    <footer class="w-full h-[100px] bg-orange-100 mt-10"></footer>
+    <script src="./js/commonFunction.js"></script>
+    <script src="./js/index.js"></script>
   </body>
 </html>

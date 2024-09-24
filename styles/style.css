@@ -1,0 +1,14 @@
+::-webkit-scrollbar{
+    width: 5px;
+}
+::-webkit-scrollbar-thumb{
+    background-image: linear-gradient(to top,rgb(0, 255, 0),rgb(255, 214, 138));
+    border-radius: 10px;
+}
+::-webkit-scrollbar-track{
+    background-color: lightgray;
+}
+
+body{
+    cursor: url("../assets/cursor.png"),auto;
+}
