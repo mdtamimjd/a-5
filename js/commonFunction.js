@@ -59,17 +59,9 @@ function donateNowMethod(inputValuePramitor, alldonatedMoneyPramitor, title,moda
     <h2 class="font-semibold text-xl">${addInputMoneyValue} Taka is donated for ${changeTitleNameForHistory}</h2>
     <p class="text-zinc-500 font-medium">Date: ${dateNow}</p>
     `;
-    // getId("show-history").appendChild(div);
     let show_div = getId("show-history")
     show_div.insertBefore(div,show_div.childNodes[0])
 
-    // modal 
-    getId(modal).classList.remove("hidden");
-    getId(modal).classList.add("flex");
-}
-
-function closeModal(modal){
-    getId(modal).classList.add("hidden");
-    getId(modal).classList.remove("flex");
-
+    // modal  
+    getId("my_modal_6").checked = true;
 }

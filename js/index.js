@@ -37,14 +37,3 @@ getId("two-btn").onclick = ()=>{
 getId("three-btn").onclick = ()=>{
     donateNowMethod("inputThree","threeDonateBalance","threeTitle","modal-three");
 }
-
-// modal close button
-getId("closeModal-one").addEventListener("click", ()=>{
-    closeModal("modal-one");
-});
-getId("closeModal-two").addEventListener("click", ()=>{
-    closeModal("modal-two");
-});
-getId("closeModal-three").addEventListener("click", ()=>{
-    closeModal("modal-three");
-});

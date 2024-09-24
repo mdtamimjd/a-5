@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="cupcake">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,7 +8,12 @@
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon" />
     <!-- google icon -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <!-- daisy ui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
   </head>
   <body class="bg-zinc-50">
     <header class="sticky top-0 z-20">
@@ -112,29 +117,6 @@
               Donate Now
             </button>
           </div>
-          <!-- modal -->
-          <div
-            id="modal-one"
-            class="hidden absolute w-full h-full rounded-lg bg-white/30 justify-center items-center z-0"
-          >
-            <div
-              class="bg-white md:w-1/2 md:h-2/3 w-10/12 text-center p-5 rounded-lg z-10 flex flex-col justify-between items-center gap-3 shadow-2xl shadow-black"
-            >
-              <h2 class="font-bold text-4xl text-zinc-950 font-sans">
-                Congrates!
-              </h2>
-              <div><img src="./assets/coin.png" alt="" /></div>
-              <p class="font-medium text-2xl text-zinc-700">Successfully</p>
-              <div>
-                <button
-                  id="closeModal-one"
-                  class="px-6 py-3 rounded-xl font-medium text-lg bg-zinc-200 hover:bg-green-400 transition duration-500"
-                >
-                  Close
-                </button>
-              </div>
-            </div>
-          </div>
         </div>
         <!-- card two Feni -->
         <div
@@ -165,15 +147,14 @@
             <p
               class="text-zinc-500 text-lg tracking-wide h-[140px] line-clamp-5 hover:line-clamp-none hover:overflow-y-scroll"
             >
-              Feni, Cumilla, Khagrachhari,
-               Chattogram, Moulvibazar,
-              Habiganj, Brahmanbaria, Sylhet, Lakshmipur and Cox's Bazar
-              districts have been affected in the ongoing flood since August 20.
-              A total of 9,46,769 families have been stranded in the flood while
-              1,95,030 people and 18,096 cattle were given shelter to 3176
-              shelter centers, according to latest updates on ongoing flood
-              issued by the Disaster Management and Relief Ministry. We help
-              flood affected people and we need your help to help them so please
+              Feni, Cumilla, Khagrachhari, Chattogram, Moulvibazar, Habiganj,
+              Brahmanbaria, Sylhet, Lakshmipur and Cox's Bazar districts have
+              been affected in the ongoing flood since August 20. A total of
+              9,46,769 families have been stranded in the flood while 1,95,030
+              people and 18,096 cattle were given shelter to 3176 shelter
+              centers, according to latest updates on ongoing flood issued by
+              the Disaster Management and Relief Ministry. We help flood
+              affected people and we need your help to help them so please
               donate to support the affected people.
             </p>
             <input
@@ -188,29 +169,6 @@
             >
               Donate Now
             </button>
-          </div>
-          <!-- modal -->
-          <div
-            id="modal-two"
-            class="hidden absolute w-full h-full rounded-lg bg-white/30 justify-center items-center z-0"
-          >
-            <div
-              class="bg-white md:w-1/2 md:h-2/3 w-10/12 text-center p-5 rounded-lg z-10 flex flex-col justify-between items-center gap-3 shadow-2xl shadow-black"
-            >
-              <h2 class="font-bold text-4xl text-zinc-950 font-sans">
-                Congrates!
-              </h2>
-              <div><img src="./assets/coin.png" alt="" /></div>
-              <p class="font-medium text-2xl text-zinc-700">Successfully</p>
-              <div>
-                <button
-                  id="closeModal-two"
-                  class="px-6 py-3 rounded-xl font-medium text-lg bg-zinc-200 hover:bg-green-400 transition duration-500"
-                >
-                  Close
-                </button>
-              </div>
-            </div>
           </div>
         </div>
         <!-- card three  quota-protest -->
@@ -242,7 +200,11 @@
             <p
               class="text-zinc-500 text-lg tracking-wide h-[140px] line-clamp-5 hover:line-clamp-none hover:overflow-y-scroll"
             >
-            We also support those who have suffered in the quotation movement, they fought for the country so you should support them. Please donate to support those who are in the hospital due to the disaster, many of them have lost their hands or eyes, so let's all support them financially.
+              We also support those who have suffered in the quotation movement,
+              they fought for the country so you should support them. Please
+              donate to support those who are in the hospital due to the
+              disaster, many of them have lost their hands or eyes, so let's all
+              support them financially.
             </p>
             <input
               type="text"
@@ -254,53 +216,46 @@
               id="three-btn"
               class="px-8 py-2.5 font-medium text-lg bg-green-400 hover:bg-green-500 rounded-lg"
             >
-              Donate Now
+            Donate Now
             </button>
-          </div>
-          <!-- modal -->
-          <div
-            id="modal-three"
-            class="hidden absolute w-full h-full rounded-lg bg-white/30 justify-center items-center z-0"
-          >
-            <div
-              class="bg-white md:w-1/2 md:h-2/3 w-10/12 text-center p-5 rounded-lg z-10 flex flex-col justify-between items-center gap-3 shadow-2xl shadow-black"
-            >
-              <h2 class="font-bold text-4xl text-zinc-950 font-sans">
-                Congrates!
-              </h2>
-              <div><img src="./assets/coin.png" alt="" /></div>
-              <p class="font-medium text-2xl text-zinc-700">Successfully</p>
-              <div>
-                <button
-                  id="closeModal-three"
-                  class="px-6 py-3 rounded-xl font-medium text-lg bg-zinc-200 hover:bg-green-400 transition duration-500"
-                >
-                  Close
-                </button>
-              </div>
-            </div>
           </div>
         </div>
       </section>
     </main>
 
     <!-- main history part -->
-     <main class="hidden w-11/12 lg:w-8/12 mx-auto space-y-5" id="history-main-section">
+    <main
+      class="hidden w-11/12 lg:w-8/12 mx-auto space-y-5"
+      id="history-main-section"
+    >
       <!-- history title -->
-      <div class="flex items-center gap-2"><span class="font-semibold text-3xl">Your Donation History</span> <span class="material-symbols-outlined text-3xl pt-2">
-        history
-        </span></div>
-        <!-- history show data -->
-        <section
-          id="show-history"
-          class="flex-col min-h-screen space-y-5"
-        >
-        
-      </section>
-     </main>
+      <div class="flex items-center gap-2">
+        <span class="font-semibold text-3xl">Your Donation History</span>
+        <span class="material-symbols-outlined text-3xl pt-2"> history </span>
+      </div>
+      <!-- history show data -->
+      <section
+        id="show-history"
+        class="flex-col min-h-screen space-y-5"
+      ></section>
+    </main>
 
     <!-- footer -->
     <footer class="w-full h-[100px] bg-orange-100 mt-10"></footer>
+
+    <!-- The button to open modal -->
+    <input type="checkbox" id="my_modal_6" class="modal-toggle" />
+    <div class="modal" role="dialog">
+      <div class="modal-box flex flex-col items-center gap-2">
+        <h3 class="text-3xl font-bold">Congrates!</h3>
+        <div><img src="./assets/coin.png" alt="" /></div>
+        <p class="text-lg">Successfully</p>
+        <div class="modal-action">
+          <label for="my_modal_6" class="btn">Close confirmation</label>
+        </div>
+      </div>
+    </div>
+
     <script src="./js/commonFunction.js"></script>
     <script src="./js/index.js"></script>
   </body>
